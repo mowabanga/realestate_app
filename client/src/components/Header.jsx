@@ -37,17 +37,17 @@ export default function Header() {
             </li>
           </Link>
           <Link to="/profile">
-            (currentUser ? (
-            <img
-              className="rounded-full h-7 w-7 object-cover"
-              src={currentUser.avatar}
-              alt="profile picture"
-            />
+            {currentUser ? (
+              <img
+                className="rounded-full h-7 w-7 object-cover"
+                src={currentUser.avatar}
+                alt="profile picture"
+              />
             ) : (
-            <li className="sm:inline text-slate-700 hover:underline cursor-pointer">
-              Sign In
-            </li>
-            ))
+              <li className="sm:inline text-slate-700 hover:underline cursor-pointer">
+                Sign In
+              </li>
+            )}
           </Link>
         </ul>
       </div>
